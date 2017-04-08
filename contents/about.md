@@ -8,6 +8,7 @@ title: About
 
 * [facebook](https://www.facebook.com/junichi.watanuki)
 * [github](https://github.com/JunichiWatanuki)
+* [qiita](http://qiita.com/JunichiWatanuki)
 * [codepen](https://codepen.io/j-watanuki/)
 * [endomondo](https://www.endomondo.com/profile/502996)
 * [youtube](https://www.youtube.com/user/watanukitube)
