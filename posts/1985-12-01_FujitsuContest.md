@@ -3,7 +3,7 @@ layout: post
 title: 富士通コンテスト応募作品（F-BASIC)
 ---
 
-FM16β、FM77AV、FM7
+FM16β、FM77AV、FM7.
 
 投稿テスト
 > 引用文字列
