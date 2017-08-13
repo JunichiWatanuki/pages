@@ -1,7 +1,7 @@
 title: 備忘録ページ Memorandum page
 description: © 2017 Junichi Watanuki All Rights Reserved.
-baseurl: ""
-url: "https://junichiwatanuki.github.io/pages/"
+baseurl: "/pages"
+url: "https://junichiwatanuki.github.io/"
 name: Memorandum page
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
