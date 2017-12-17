@@ -3,7 +3,7 @@ description: © 2017 Junichi Watanuki All Rights Reserved.
 baseurl: "/pages"
 url: "https://junichiwatanuki.github.io/"
 name: Memorandum page
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://ja.gravatar.com/junichiwatanuki
 
 footer-links:
   dribbble:
@@ -11,17 +11,21 @@ footer-links:
   facebook: junichi.watanuki
   flickr:
   github: JunichiWatanuki
+<<<<<<< HEAD
   codepen          : j-watanuki
   foursquare       : j_watanuki
   gitlab           : JunichiWatanuki
   instagram:
   linkedin:
+=======
+  instagram: junichiwatanuki
+>>>>>>> 799e801ee8937dc997abb065e2a00619d492ad98
   pinterest:
   rss: # just type anything here for a working RSS icon
 #  twitter: XXXXX
 #  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-#  youtube: # channel/<your_long_string> or user/<user-name>
-#  googleplus: # anything in your profile username that comes after plus.google.com/
+  youtube: watanukitube
+  googleplus: +JunichiWatanuki
 
 google_analytics: UA-104514144-1
 
