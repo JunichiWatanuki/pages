@@ -6,21 +6,19 @@ name: Memorandum page
 avatar: https://ja.gravatar.com/junichiwatanuki
 
 footer-links:
-  dribbble:
-  email:
+#  dribbble:
+#  email:
   facebook: junichi.watanuki
-  flickr:
+#  flickr:
   github: JunichiWatanuki
-<<<<<<< HEAD
   codepen          : j-watanuki
   foursquare       : j_watanuki
   gitlab           : JunichiWatanuki
-  instagram:
-  linkedin:
+#  instagram:
+#  linkedin:
 =======
   instagram: junichiwatanuki
->>>>>>> 799e801ee8937dc997abb065e2a00619d492ad98
-  pinterest:
+#  pinterest:
   rss: # just type anything here for a working RSS icon
 #  twitter: XXXXX
 #  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
