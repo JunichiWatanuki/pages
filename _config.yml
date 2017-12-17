@@ -11,6 +11,9 @@ footer-links:
   facebook: junichi.watanuki
   flickr:
   github: JunichiWatanuki
+  codepen          : j-watanuki
+  foursquare       : j_watanuki
+  gitlab           : JunichiWatanuki
   instagram:
   linkedin:
   pinterest:
@@ -24,6 +27,12 @@ google_analytics: UA-104514144-1
 
 sass:
   style: :expanded 
+
+# Outputting
+# permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: "/page:num/"
+# timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 plugins:
    - jekyll-mentions
