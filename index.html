@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+<title>Qiita武蔵野AdventCalendar_2017の動作確認ページ３</title>
+<meta charset="utf-8">
+
+<!-- まずは、改造したjsPDFを読み込んでおく。 -->
+<script src='./module/libs/jspdf.debug.js' type='text/javascript'></script>
+
+
+<!-- 次に、改造後の仕様(半角文字を全角に置き換える関数を用意しておく) -->
+<script type="text/javascript"> 
+// utf16をHexにする。
+function utf16_to_hexcode(str){
+var strText = str.replace(/[A-Za-z0-9]/g, function(s) {
+				return String.fromCharCode(s.charCodeAt(0) + 0xFEE0);
+				});
+	var tmpCode = "";
+	var strCode = "";
+	var strTmpCode = "";
+	var arr = strText.split('');
+	var intArr = Number(arr.length);
+	for( var i = 0; i < intArr; i ++ ){
+		strCode=strCode + escape(arr[i]).replace( /%u/g , "" );
+	}
+	return strCode;
+};
+
+// 半角を全角に変換する。
+function han2zen(str) {
+	str = str.toString();
+	var zenkaku = '';
+	str.split('').forEach(function (s) {
+		zenkaku += String.fromCharCode(s.charCodeAt(0) + 0xFEE0);
+	});
+	return zenkaku;
+}
+</script>
+</head>
+
+<body>
+
+<!-- 出力したいPDFを定義する。 -->
+<script type="text/javascript">
+function createPDFObject(varIntX){
+	alert("作成に少々時間がかかる場合があります。\nこのまま少々お待ちくださいませ。");
+	//印字文字列情報の生成
+	var doc = new jsPDF('p', 'pt', 'a4', false);
+		doc.setFontSize(20);
+		doc.text(60, 150, utf16_to_hexcode('【2017年12月25日の投稿記事】'));
+		doc.text(100, 200, utf16_to_hexcode('⇒jsPDFで、無理やり日本語出力を行ってみる'));
+		doc.save( '武蔵野AdventCalendar_2017の最終日_003.pdf')
+}
+</script>
+
+<!-- 出力ページの見出しを定義する。 -->
+<h1>jsPDFによる出力テストページ</h1>
+
+<!-- createPDF関数を呼び出して、PDFを出力させるスイッチをOnにする。 -->
+<script type="text/javascript">
+	createPDFObject()
+</script>
+
+</body>
+</html>
