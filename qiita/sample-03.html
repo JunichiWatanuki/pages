@@ -3,7 +3,7 @@
 <title>Qiita武蔵野AdventCalendar_2017の動作確認ページ３</title>
 <meta charset="utf-8">
 
-<!-- まずは、改造したjsPDFを読み込んでおく。 -->
+<!-- まずは、改造したjsPDFを読み込んでおく。ソースの中身を確認しながらなのでdebugのほうを利用する。 -->
 <script src='./module/libs/jspdf.debug.js' type='text/javascript'></script>
 
 
@@ -53,12 +53,12 @@ function createPDFObject(varIntX){
 </script>
 
 <!-- 出力ページの見出しを定義する。 -->
-<h1>jsPDFによる出力テストページ</h1>
+<h1>jsPDFによる出力テストページ３</h1>
+～まずは本家のjsPDFで日本語を出力できるよう改造して動作試験してみたPDFのイメージ～<br>
+ ※ 改造の仕様として、半角英数を全角に変換するという処理が必要。そのためHTMLに処理を埋め込んでいる。<br>
 
-<!-- createPDF関数を呼び出して、PDFを出力させるスイッチをOnにする。 -->
-<script type="text/javascript">
-	createPDFObject()
-</script>
+<!-- createPDF関数を呼び出して、PDFを出力させるリンクを載せる。 -->
+<a href="#" onclick="createPDFObject();">このリンクを開き、jsPDFで生成するPDFを取得する。</a>
 
 </body>
 </html>
